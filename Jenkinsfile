@@ -8,7 +8,7 @@ pipeline {
                 branch 'master'
             }
             steps {
-                sh 'cat readme.md'
+                sh 'cat README.md'
                
             }
         }
