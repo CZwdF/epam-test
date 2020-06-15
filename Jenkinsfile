@@ -3,21 +3,21 @@ pipeline {
     agent any 
     stages {
 
-   stage('Deliver for development') {
+   stage('build and deploy') {
             when {
                 branch 'master'
             }
             steps {
-                sh 'cat README.md'
+                echo 'build and deploy stuff'
                
             }
         }
-        stage('Deploy for production') {
+        stage('Only build') {
             when {
                 branch 'zzz'
             }
             steps {
-                sh 'cat README.md'
+                echo 'only build a source code'
                 
             }
         }
